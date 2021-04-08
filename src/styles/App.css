@@ -1,0 +1,189 @@
+body, html, .App {
+  font-family: 'Arimo', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  scrollbar-width: thin;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.2rem solid #00729b59;
+  height: 7.5vh;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.947);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.navBtn {
+  cursor: pointer;
+  font-size: 2.9vh;
+  text-align: center;
+  font-weight: 550;
+}
+
+.navBtn:hover {
+  color: rgb(111, 72, 254);
+  transition: all 0.25s ease;
+}
+
+.cartIcon {
+  position: absolute;
+  right: 2%;
+}
+
+.logo {
+  margin-top: 6px;
+  width: 14rem;
+}
+
+.logo:hover {
+  color: rgb(111, 72, 254);
+}
+
+.bg-clip {
+  width: 100%;
+  height: 93vh;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .bg-clip {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .cardDetails {
+    font-size: 2.1vh;
+    width: 100% !important;
+  }
+}
+
+video {
+  min-width:100vw;
+}
+
+.searchContainer {
+  position: absolute;
+  top: 15%;
+  right: 50%;
+  transform: translate(50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 95%;
+  max-width: 450px;
+  z-index: 5;
+}
+
+.searchContainer input[type=text] {
+  font-size: 2.5rem;
+  border-radius: 0.8rem;
+  outline: none;
+  font-weight: 500;
+  width: 100%
+}
+
+
+
+.searchContainer input[type=submit] {
+  width: 15rem;
+  height: 2.7rem;
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: rgb(12, 0, 50);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.1rem;
+  font-weight: 550;
+}
+
+
+.main {
+  margin: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardHeader {
+  font-size: 3vh;
+}
+
+.cardDetails {
+  font-size: 2.1vh;
+  width: 38vw;
+}
+
+
+.searchBar {
+  width: 35vw;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.searchDestination {
+  width: 8vw;
+  height: 1.9vw;
+  font-size: 1.4rem;
+  border: none;
+  -webkit-appearance: none;
+  border: rgb(201, 201, 201) 1px solid
+
+}
+
+.searchDepart {
+  width: 8vw;
+  height: 1.5vw;
+  font-size: 1.4rem
+}
+
+.searchReturn {
+  height: 1.5vw;
+  width: 9vw;
+  font-size: 1.4rem
+}
+
+.searchBtn {
+  width: 12rem;
+  height: 2.8rem;
+  margin-top: 0rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.searchBtn:hover {
+  background-color: white;
+  border: black 2px solid;
+  transition: all 0.08s ease
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.Loading {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -70%);
+  width:25vw;
+  height: 10vw;
+}
